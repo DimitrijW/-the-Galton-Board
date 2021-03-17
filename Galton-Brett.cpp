@@ -8,18 +8,19 @@
 using namespace std;
 
 //Funktionsprototypen
-void meldung (char sprache_mel, int meldungszahl_mel);
-void galton (int &zeilenanzahl_gal, int &spaltenanzahl_gal, char sprache_gal, char galtonbrett_gal[30][61], int &brettzahl_gal);
-void unterprogramm (char &wahlunterprogramm_unt, char &sprache_unt, int &zeilenanzahl_unt, int &spaltenanzahl_unt, char galtonbrett_unt [30][61], int &brettzahl_unt, int &wurfzaehler_unt);
-void sprache_prog (char &sprache_spra);
-void ausgabe (char sprache_aus, char galtonbrett_aus [30][61], int zeilenanzahl_aus, int spaltenanzahl_aus, int brettzahl_aus);
-void nagelbrett (int zeilenanzahl_nag, int spaltenanzahl_nag, char galtonbrett_nag [30][61], char sprache_nag, int brettzahl_nag);
-void loeschen (int zeilenanzahl_loe, int spaltenanzahl_loe, char galtonbrett_loe [30][61], char sprache_loe, int brettzahl_loe, int &wurfzaehler_loe);
-void wurf(char sprache_wurf, char galtonbrett_wurf [30][61], int zeilenanzahl_wurf, int spaltenanzahl_wurf, int &wurfzaehler_wurf, int brettzahl_wurf);
+void meldung(char sprache_mel, int meldungszahl_mel);
+void galton(int &zeilenanzahl_gal, int &spaltenanzahl_gal, char sprache_gal, char galtonbrett_gal[30][61], int &brettzahl_gal);
+void unterprogramm(char &wahlunterprogramm_unt, char &sprache_unt, int &zeilenanzahl_unt, int &spaltenanzahl_unt, char galtonbrett_unt[30][61], int &brettzahl_unt, int &wurfzaehler_unt);
+void sprache_prog(char &sprache_spra);
+void ausgabe(char sprache_aus, char galtonbrett_aus[30][61], int zeilenanzahl_aus, int spaltenanzahl_aus, int brettzahl_aus);
+void nagelbrett(int zeilenanzahl_nag, int spaltenanzahl_nag, char galtonbrett_nag[30][61], char sprache_nag, int brettzahl_nag);
+void loeschen(int zeilenanzahl_loe, int spaltenanzahl_loe, char galtonbrett_loe[30][61], char sprache_loe, int brettzahl_loe, int &wurfzaehler_loe);
+void wurf(char sprache_wurf, char galtonbrett_wurf[30][61], int zeilenanzahl_wurf, int spaltenanzahl_wurf, int &wurfzaehler_wurf, int brettzahl_wurf);
 void zusatz(int zeilenanzahl_zu, int spaltenanzahl_zu, char sprache_zu, int brettzahl_zu, char &z_zu);
 
 //Hauptprogramm
-int main (){
+int main ()
+{
 	//Vereinbarungen
 	char sprache;
 	int meldungszahl, zeilenanzahl, spaltenanzahl;
@@ -216,7 +217,7 @@ void unterprogramm(char &wahlunterprogramm_unt, char &sprache_unt, int &zeilenan
 }
 
 //Galton-Brett [1]
-void galton (int &zeilenanzahl_gal, int &spaltenanzahl_gal, char sprache_gal, char galtonbrett_gal [30][61], int &brettzahl_gal){
+void galton (int &zeilenanzahl_gal, int &spaltenanzahl_gal, char sprache_gal, char galtonbrett_gal[30][61], int &brettzahl_gal){
 	//Vereinbarungen
 	int mitte_gal, zeil_gal, spal_gal; //Anzahl Bretter einbringen
 	int meldungszahl_gal;
